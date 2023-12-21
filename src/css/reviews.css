@@ -40,9 +40,10 @@
   margin-bottom: 40px;
 }
 
-.reviews-container {
-  width: 335px;
-  height: 282px;
+.reviews-list {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
 }
 
 .reviews-list-item {
@@ -50,6 +51,8 @@
   border-radius: 24px;
   background: #fbfbfb;
   border: none;
+  width: 335px;
+  height: 282px;
 }
 
 .portfolio-list-avatar {
@@ -94,12 +97,82 @@
 
 /* ================ Tablete ================= */
 @media screen and (min-width: 768px) {
+  .container {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
   .section {
     padding-top: 150px;
     padding-bottom: 150px;
   }
+  .card-two {
+    display: none;
+  }
+
+  .reviews-title {
+    width: 704px;
+    font-size: 48px;
+    font-weight: 500;
+    line-height: 48px;
+    letter-spacing: -0.02em;
+  }
+
+  .reviews-desc {
+    width: 571px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.28;
+    margin-bottom: 75px;
+  }
+
+  .reviews-list-item {
+    width: 336px;
+  }
 }
 
 /* ================ Desktop ================= */
-@media screen and (min-width: 1158px) {
+@media screen and (min-width: 1280px) {
+  .reviews-list {
+    gap: 26px;
+  }
+
+  .container {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .reviews-title {
+    width: 854px;
+  }
+
+  .reviews-desc {
+    width: 571px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.28;
+    margin-bottom: 75px;
+  }
+
+  .card-two {
+    display: initial;
+  }
+
+  .reviews-list-item {
+    padding: 32px 28px;
+    width: 376px;
+  }
+}
+
+/* ================ Desktop ================= */
+@media screen and (min-width: 1440px) {
+  .reviews-list-item {
+    padding: 32px 36px;
+    width: 392px;
+  }
+
+  .container {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
 }
