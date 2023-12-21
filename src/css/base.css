@@ -40,7 +40,7 @@ body {
   padding-bottom: 40px;
 }
 
-@media screen and (min-width) {
+@media screen and (min-width: 768px) {
   .section {
     padding-top: 75px;
     padding-bottom: 75px;
