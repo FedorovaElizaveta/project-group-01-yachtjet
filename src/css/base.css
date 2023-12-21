@@ -7,8 +7,30 @@ body {
 
 .container {
   min-width: 320px;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
   margin-left: auto;
   margin-right: auto;
+}
+
+@media screen (min-width: 768) {
+  .container {
+    width: 768px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+}
+
+@media screen (min-width: 1280px) {
+  .container {
+    width: 1280px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+
+@media screen (min-width: 1440px) {
+  .container {
+    width: 1440px;
+  }
 }
