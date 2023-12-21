@@ -1,0 +1,68 @@
+
+/* ===============MOBILE STYLES================ */
+.rent-title{
+font-size: 28px;
+font-weight: 500;
+line-height: 1; /* 100% */
+letter-spacing: -0.02em;
+}
+
+.rent-content{
+    margin-bottom: 80px;
+}
+
+.rent-form{
+    margin-top: 40px;
+}
+
+.rent-form-box{
+    margin-bottom: 18px;
+}
+.rent-label{
+
+}
+
+.style{
+    border-radius: 12px;
+    border: 1px solid rgba(251, 251, 251, 0.20);
+    background-color: transparent;
+    outline: 0px solid transparent;
+    }
+
+.rent-input{
+    width: 100%;
+    height: 42px;
+
+}
+.rent-textarea{
+    width: 100%;
+    height: 108px;
+    resize: none;
+}
+
+/* ===============/MOBILE STYLES================*/
+
+
+/* ===============TABLET STYLES================ */
+
+@media screen and (min-width: 768){
+    .rent-title{
+        font-size: 48px;
+        }
+}
+
+/* ===============/TABLET STYLES================ */
+
+/* ===============DESCKTOP 1 STYLES================ */
+@media screen and (min-width: 1280px){
+
+}
+
+/* ===============/DESCKTOP 1  STYLES================ */
+
+/* ===============DESCKTOP 2 STYLES================ */
+
+@media screen and (min-width: 1440px){
+
+}
+/* ===============/DESCKTOP 2 STYLES================ */
