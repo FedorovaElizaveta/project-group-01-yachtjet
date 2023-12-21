@@ -1,48 +1,57 @@
-<section class="rent-section section"> 
-    <div class="container ">
-    <div class="rent-content ">
-        <h2 class="rent-titel">Rent a yacht now</h2>
+<section class="rent-section section" id="rent"> 
+    <div class="container rent-container">
+    <div class="rent-content">
+        <h2 class="rent-title">Rent a yacht now</h2>
         <form class="rent-form">
-
             <div class="rent-form-box">
-            <label class="rent-label" for=""></label>
-            <input class="rent-input style" type="text">
+                <label for="user-name"></label>
+            <input class="rent-input style" type="text" id="user-name" name="user-name" placeholder="Full Name"  pattern="[a-zA-Za-яА-ЯіІїЇєЄґҐйЙʼ]+" title="Alex" required>
             </div>
 
             <div class="rent-form-box">
-                <label  class="rent-label" for=""></label>
-                <input class="rent-input style" type="text">
+                <label for="user-email"></label>
+                <input class="rent-input style" type="email" id="user-email" name="user-email" placeholder="Email" required>
             </div>
 
             <div class="rent-form-box">
-                <label class="rent-label" for=""></label>
-                <input class="rent-input style" type="text">
+                <label for="user-number"></label>
+                <input class="rent-input style" type="tel" id="user-number" name="user-number" placeholder="Phone number"  pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" title="xxx-xxx-xx-xx" required>
             </div>
 
-            <div class="">
-                <label class="rent-label" for=""></label>
-                <textarea class="rent-textarea style" name="" id="" placeholder="Comment" cols="30" rows="10"></textarea>
+            <div class="rent-form-box-txtr">
+                <label for="user-comment" ></label>
+                <textarea class="rent-textarea style" name="user-comment" id="user-comment" placeholder="Comment" cols="30" rows="10"></textarea>
+                
             </div>
 
          <button class="rent-sbm-btn" type="submit">Send</button>
         </form>
     </div>
-    <div class="rent-img ">
-        <!-- <picture>
+    <div class="">
+        <picture >
             <source
-            srcset="./images/meditation-dsk.jpg 1x,
-                    ./images/meditation-dsk@2x.jpg 2x"
-                    media="(min-width:1158px)"/>                 
+            srcset="./img/desktop_1440/rent_a_yacht/image_rent.jpg 1x,
+            ./img/desktop_1440/rent_a_yacht/image_rent@2x.jpg 2x" 
+                    media="(min-width:1440px)"/>   
+
             <source
-            srcset="./images/meditation-tab.jpg 1x,
-            ./images/meditation-tab@2x.jpg 2x"
+            srcset="./img/desktop_1280/rent_a_yacht/image_rent.jpg 1x,
+            ./img/desktop_1280/rent_a_yacht/image_rent@2x.jpg  2x"
+            media="(min-width:1280px)"/>
+
+            <source
+            srcset="./img/tablet/rent_a_yacht/image_rent.jpg 1x,
+            ./img/tablet/rent_a_yacht/image_rent@2x.jpg  2x"
             media="(min-width:768px)"/>
+
+
             <source 
-            srcset="./images/meditation-mb.jpg 1x,
-                    ./images/meditation-mb@2x.jpg 2x" 
-            media="(max-width:767px)"/> -->
-            <img src="./img/mobille/rent_a_yacht/image_rent.jpg" 
-            alt="Meditation App"/>
+            srcset="./img/mobille/rent_a_yacht/image_rent.jpg 1x,
+            ./img/mobille/rent_a_yacht/image_rent@2x.jpg  2x" 
+            media="(max-width:767px)"/>
+            <img class="rent-img" src="./img/desktop_1440/rent_a_yacht/image_rent.jpg" 
+            alt="Yacht"/>
+        </picture>
     </div>
 </div>
 </section>
