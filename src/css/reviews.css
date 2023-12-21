@@ -40,6 +40,11 @@
   margin-bottom: 40px;
 }
 
+.reviews-container {
+  width: 335px;
+  height: 282px;
+}
+
 .reviews-list-item {
   padding: 32px 16px;
   border-radius: 24px;
@@ -79,10 +84,20 @@
 
 /* ================ Mobile ================= */
 @media screen and (max-width: 767px) {
+  .card-one {
+    display: none;
+  }
+  .card-two {
+    display: none;
+  }
 }
 
 /* ================ Tablete ================= */
 @media screen and (min-width: 768px) {
+  .section {
+    padding-top: 150px;
+    padding-bottom: 150px;
+  }
 }
 
 /* ================ Desktop ================= */
