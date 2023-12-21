@@ -13,7 +13,7 @@ body {
   margin-right: auto;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768) {
   .container {
     width: 768px;
     padding-left: 32px;
