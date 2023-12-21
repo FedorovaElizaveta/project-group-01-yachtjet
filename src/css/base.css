@@ -13,7 +13,7 @@ body {
   margin-right: auto;
 }
 
-@media screen (min-width: 768) {
+@media screen and (min-width: 768) {
   .container {
     width: 768px;
     padding-left: 32px;
@@ -21,7 +21,7 @@ body {
   }
 }
 
-@media screen (min-width: 1280px) {
+@media screen and (min-width: 1280px) {
   .container {
     width: 1280px;
     padding-left: 50px;
@@ -29,8 +29,20 @@ body {
   }
 }
 
-@media screen (min-width: 1440px) {
+@media screen and (min-width: 1440px) {
   .container {
     width: 1440px;
+  }
+}
+
+.section {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+@media screen and (min-width) {
+  .section {
+    padding-top: 75px;
+    padding-bottom: 75px;
   }
 }
