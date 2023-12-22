@@ -1,11 +1,11 @@
+/* ===== MOBILE ===== */
+
 .advantages-list-wrapper {
   max-width: 335px;
   background-color: #1b414b;
   border-radius: 24px;
   margin-bottom: 20px;
   padding: 80px 20px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .advantages-list {
@@ -56,6 +56,15 @@
   margin-right: auto;
 }
 
+@media screen and (max-width: 1279px) {
+  .advantages-list-wrapper {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* ===== TABLET ===== */
+
 @media screen and (min-width: 768px) {
   .advantages-list-wrapper {
     min-width: 704px;
@@ -85,21 +94,52 @@
   }
 
   .advantages-list-fourth-item-description {
-    width: 270px;
+    width: 272px;
   }
 
   .advantages-list-item-count {
     font-size: 32px;
-    font-weight: 500;
   }
 
   .advantages-list-item-description {
-    color: rgba(251, 251, 251, 0.8);
     font-size: 13px;
     line-height: 1.15;
   }
 
   .advantages-list-item-description::before {
     width: 304px;
+  }
+}
+
+/* ===== DESKTOP 1280 ===== */
+
+@media screen and (min-width: 1280px) {
+  .advantages-container {
+    display: flex;
+    column-gap: 32px;
+  }
+
+  .advantages-list-wrapper {
+    min-width: 716px;
+    margin-bottom: 0;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .advantages-list-item-description::before {
+    width: 280px;
+  }
+}
+
+/* ===== DESKTOP 1440 ===== */
+
+@media screen and (min-width: 1440px) {
+  .advantages-list-wrapper {
+    min-width: 768px;
+    padding-right: 76px;
+  }
+
+  .advantages-list-item-description::before {
+    width: 318px;
   }
 }
