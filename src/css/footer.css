@@ -30,16 +30,15 @@ img {
 
 .footer {
   background-color:  #1B414B; 
-  margin-left: 10px;
-  margin-right: 10px;
   border-radius: 24px 24px 0px 0px;
 }
 .contain{
-  padding-top: 40px;
   padding-bottom: 20px;
-  padding-left: 30px ;
-  padding-right: 30px;
+  padding-top: 40px;
 }
+
+
+
 
 .logo-foot {
   color: #FBFBFB;
@@ -84,10 +83,7 @@ img {
   gap: 8px;
   margin-left: 37px;
 }
-.social-foot {
-display: flex;
-justify-content: center;
-}
+
 .foot-social{
   width: 24px;
   height: 24px;
@@ -102,6 +98,10 @@ display: flex;
 gap: 8px;
 margin-bottom: 40px;
 margin-top: 80px;
+margin-left: 134px;
+}
+.social{
+  display: flex;
 }
 .text-bloc{
   text-align: center;
@@ -125,6 +125,18 @@ margin-top: 80px;
  font-weight: 400;
  display: inline-flex;
  margin-top: 82px;
+}
+ .nav-bloc{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+@media screen and (min-width: 320px) {
+ 
+  .footer {
+    margin: 0 10px;
+  }
 }
 @media screen and (min-width: 768px) {
  
@@ -150,9 +162,11 @@ margin-top: 80px;
  .text-footer {
   font-size: 32px;
   width: 640px;
+  margin-top: 96px;
+  margin-bottom: 99px;
  }
  .text-bloc {
-  margin-top: 96px;
+  margin-top: 99px;
  }
 }
 
