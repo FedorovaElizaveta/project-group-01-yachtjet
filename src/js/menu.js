@@ -2,19 +2,15 @@ const openModalBtn = document.getElementById('openModalBtn');
 const closeModalBtn = document.getElementById('closeModalBtn');
 const modal = document.getElementById('myModal');
 
-// Event listener to open the modal
-openModalBtn.addEventListener('click', function() {
-    modal.style.display = 'block';
-});
+function openModal() {
+    modal.classList.add('is-open');
+  }
+  
+  // Function to close the modal
+  function closeModal() {
+    modal.classList.remove('is-open');
+  }
 
-// Event listener to close the modal
-closeModalBtn.addEventListener('click', function() {
-    modal.style.display = 'none';
-});
-
-// Event listener to close the modal if clicked outside the modal content
-// window.addEventListener('click', function(event) {
-//     if (event.target === modal) {
-//         modal.style.display = 'none';
-//     }
-// });
+  // Attach click event listeners to the buttons
+  openModalBtn.addEventListener('click', openModal);
+  closeModalBtn.addEventListener('click', closeModal);
