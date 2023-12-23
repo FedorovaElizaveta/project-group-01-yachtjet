@@ -1,8 +1,3 @@
-.reviews-section {
-  padding-top: 80px;
-  padding-bottom: 80px;
-}
-
 .reviews-title {
   margin-left: auto;
   margin-right: auto;
@@ -78,10 +73,6 @@
 
 /* ================ Tablete ================= */
 @media screen and (min-width: 768px) {
-  .reviews-section {
-    padding-top: 150px;
-    padding-bottom: 150px;
-  }
   .card-two {
     display: none;
   }
