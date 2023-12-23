@@ -1,0 +1,125 @@
+.reviews-title {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 335px;
+  color: #fbfbfb;
+  text-align: center;
+  font-size: 28px;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  margin-bottom: 25px;
+}
+
+.reviews-desc {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 335px;
+  color: #fbfbfb;
+  text-align: center;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: -0.02em;
+  opacity: 0.4;
+  margin-bottom: 40px;
+}
+
+.reviews-list {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+}
+
+.reviews-list-item {
+  padding: 32px 8px;
+  border-radius: 24px;
+  background-color: #fbfbfb;
+  border: none;
+  max-width: 335px;
+  min-height: 282px;
+}
+
+.portfolio-list-avatar {
+  margin: 0 auto;
+}
+
+.reviews-list-author {
+  margin-top: 24px;
+  margin-bottom: 8px;
+  color: #040306;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.1;
+  letter-spacing: 0.02em;
+}
+
+.reviews-list-text {
+  color: rgba(4, 3, 6, 0.4);
+  text-align: center;
+  font-size: 16px;
+  line-height: 1.4;
+  letter-spacing: -0.02em;
+}
+
+/* ================ Mobile ================= */
+@media screen and (max-width: 767px) {
+  .card-one {
+    display: none;
+  }
+  .card-two {
+    display: none;
+  }
+}
+
+/* ================ Tablete ================= */
+@media screen and (min-width: 768px) {
+  .card-two {
+    display: none;
+  }
+
+  .reviews-title {
+    max-width: 704px;
+    font-size: 48px;
+    line-height: 1;
+    letter-spacing: -0.02em;
+  }
+
+  .reviews-desc {
+    max-width: 571px;
+    font-size: 14px;
+    line-height: 1.28;
+    margin-bottom: 75px;
+  }
+
+  .reviews-list-item {
+    max-width: 336px;
+  }
+}
+
+/* ================ Desktop ================= */
+@media screen and (min-width: 1280px) {
+  .reviews-list {
+    gap: 26px;
+  }
+
+  .reviews-title {
+    max-width: 854px;
+  }
+
+  .card-two {
+    display: initial;
+  }
+
+  .reviews-list-item {
+    padding: 32px 28px;
+    max-width: 376px;
+  }
+}
+
+/* ================ Desktop ================= */
+@media screen and (min-width: 1440px) {
+  .reviews-list-item {
+    padding: 32px 36px;
+    max-width: 392px;
+  }
+}

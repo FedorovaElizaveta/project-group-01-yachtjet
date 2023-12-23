@@ -1,0 +1,152 @@
+
+
+/* ===============MOBILE STYLES================ */
+.rent-content,
+.rent-img{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+.rent-title{
+font-size: 28px;
+font-weight: 500;
+line-height: 1;
+letter-spacing: -0.02em;
+margin-bottom: 40px;
+}
+
+.rent-content{
+    margin-bottom: 80px;
+    max-width: 335px;
+}
+
+.rent-form{
+    margin-top: 40px;
+}
+
+.rent-form-box{
+    margin-bottom: 18px;
+}
+
+
+.input-style{
+    border-radius: 12px;
+    border: 1px solid rgba(251, 251, 251, 0.20);
+    background-color: transparent;
+    outline: 0px solid transparent;
+    color: rgba(251, 251, 251, 0.40);
+    font-size: 12px;
+    line-height: 1.16; 
+    transition: border 250ms linear,
+    color 250ms linear;
+    }
+
+.input-style:active,
+.input-style:focus{
+border: 1px solid rgba(251, 251, 251, 0.50);
+color: #FBFBFB;
+}
+
+.rent-input{
+    width: 100%;
+    height: 42px;
+    padding-left: 18px;
+}
+.rent-textarea{
+    width: 100%;
+    height: 108px;
+    resize: none;
+    padding: 14px 18px;
+}
+
+.rent-form-box-txtr{
+    margin-bottom: 40px;
+}
+
+.rent-sbm-btn{
+    display: block;
+    min-width: 122px;
+    height: 46px;
+    border-radius: 15px;
+    background: #1B414B;
+    border: none;
+    color: #FBFBFB;
+    font-size: 14px;
+    line-height: 1.3;
+    letter-spacing: -0.02em;
+    transition: background-color 250ms linear, color 250ms linear;
+}
+
+.rent-sbm-btn:active,
+.rent-sbm-btn:hover,
+.rent-sbm-btn:focus{
+    background-color: #FBFBFB;
+    color: #1B414B;
+}
+
+.rent-img{
+    border-radius: 24px;
+}
+/* ===============/MOBILE STYLES================*/
+
+
+/* ===============TABLET STYLES================ */
+
+@media screen and (min-width: 768px){
+     .rent-content{
+      max-width: 472px;
+      margin-bottom: 100px; 
+     }
+
+     .rent-title{
+        font-size: 48px;
+        }
+
+    .rent-form{
+        margin-top: 50px;
+    }
+
+    .input-style{
+        font-size: 14px;
+        
+     }
+
+    .rent-input{
+        width: 472px;
+        height: 54px;
+    }
+
+    .rent-sbm-btn{
+       min-width: 194px;
+       height: 56px;
+       font-size: 18px;
+       line-height: 1.1; 
+    }
+}
+
+/* ===============/TABLET STYLES================ */
+
+/* ===============DESCKTOP 1 STYLES================ */
+@media screen and (min-width: 1280px){
+.rent-container{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content:left;
+    gap: 50px;
+
+}
+
+.rent-content{
+    max-width: 472px;
+    margin-left: 0;
+    margin-right:0;
+    margin-bottom: 0;  
+   }
+
+
+}
+
+/* ===============/DESCKTOP 1  STYLES================ */
+
