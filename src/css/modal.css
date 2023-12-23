@@ -6,7 +6,7 @@
     top: 0;
     left: 0;
     transform: translateX(100%);
-    z-index: 999;
+    z-index: 999999999999;
     background-color: #0e1823;
     transition: transform 250ms linear;
   }
