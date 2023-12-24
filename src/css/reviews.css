@@ -116,6 +116,45 @@
   }
 }
 
+/*------slider---------*/
+.reviews-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  overflow: hidden;
+}
+
+.reviews-list-item {
+  flex: 0 0 100%;
+}
+
+.slider-controls {
+  margin-top: 20px;
+}
+
+.slider-controls button {
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+.slider-controls button:hover {
+  background-color: #2980b9;
+}
+
+.portfolio-list-avatar {
+  transition: transform 0.3s ease-in-out;
+}
+
+.portfolio-list-avatar:hover {
+  transform: scale(1.7);
+}
+
+/*----------end slider----*/
+
 /* ================ Desktop ================= */
 @media screen and (min-width: 1440px) {
   .reviews-list-item {
