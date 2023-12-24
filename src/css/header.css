@@ -166,11 +166,11 @@
     }
 
     .social-media-icon-link:hover,
-    {
-    fill: #062730;
+    .social-media-icon-link:focus {
+        fill: #062730;
 
 
-}
+    }
 
 }
 
