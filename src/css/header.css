@@ -104,13 +104,10 @@
         padding: 4px 0;
     }
 
-    .nav-list-link-current {
+    .nav-list-link.current {
         background-color: #1B414B;
     }
 
-    .nav-list-link:active {
-        background-color: #1B414B;
-    }
 
     /* Соцмережі */
 
@@ -159,17 +156,25 @@
         margin-right: 296px;
     }
 
-    .nav-list-link:hover,
-    .nav-list-link:focus {
+    .nav-list-link:hover:not(.nav-list-link.current),
+    .nav-list-link:focus:not(.nav-list-link.current) {
         background-color: rgba(27, 65, 75, 0.80);
     }
 
-    .social-media-icon-link:hover,
-    .social-media-icon-link:focus {
-        fill: #062730;
+    .nav-list-link.current:hover {
+        background-color: #062730;
     }
 
+    .social-media-icon-link:hover,
+    {
+    fill: #062730;
+
+
 }
+
+}
+
+
 
 @media screen and (min-width: 1440px) {
 
