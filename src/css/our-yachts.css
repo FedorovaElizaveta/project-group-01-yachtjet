@@ -110,6 +110,7 @@
     line-height: 1.28;
     letter-spacing: -0.02em;
     font-size: 14px;
+    transition: background-color 250ms linear, border-color 250ms linear, color 250ms linear;
 }
 
 .rent-yacht-link:active {
