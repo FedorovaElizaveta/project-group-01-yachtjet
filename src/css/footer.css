@@ -83,7 +83,7 @@ img {
   display: flex;
   flex-direction: row;
   gap: 8px;
-  margin-left: 37px;
+
 }
 
 .foot-social {
@@ -141,7 +141,8 @@ img {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  padding: 0 30px
+  padding: 0 30px;
+  gap: 20px;
 }
 
 @media screen and (min-width: 320px) {
