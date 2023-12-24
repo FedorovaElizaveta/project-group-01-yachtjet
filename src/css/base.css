@@ -5,6 +5,10 @@ body {
   color: #fbfbfb;
 }
 
+body.modal-is-open {
+  overflow-y: hidden;
+}
+
 .container {
   min-width: 320px;
   padding-left: 20px;
