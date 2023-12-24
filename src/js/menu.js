@@ -43,6 +43,9 @@ function removeClassFromBody() {
 }
 
 closeModalBtn.addEventListener('click', removeClassFromBody);
+link1.addEventListener('click', removeClassFromBody);
+link2.addEventListener('click', removeClassFromBody);
+link3.addEventListener('click', removeClassFromBody);
 
 
 
