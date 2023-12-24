@@ -69,6 +69,7 @@
   .card-two {
     display: none;
   }
+
 }
 
 /* ================ Tablete ================= */
@@ -134,11 +135,16 @@
 }
 
 .slider-controls button {
-  background-color: #3498db;
-  color: #fff;
+  background-color: #1B414B;
+  color: #FBFBFB;
   border: none;
+  border-radius: 15px;
   padding: 10px 15px;
   cursor: pointer;
+  font-size: 14px;
+    line-height: 1.3;
+    letter-spacing: -0.02em;
+    transition: background-color 250ms linear, color 250ms linear;
 }
 
 .slider-controls button:hover {
