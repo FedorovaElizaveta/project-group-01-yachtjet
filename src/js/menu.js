@@ -5,7 +5,7 @@ const link1 = document.getElementById('nav-link-1');
 const link2 = document.getElementById('nav-link-2');
 const link3 = document.getElementById('nav-link-3');
 
-
+// Function to open
 function openModal() {
     modal.classList.add('is-open');
   }
