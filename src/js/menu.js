@@ -6,6 +6,7 @@ const modal = document.getElementById('myModal');
 const link1 = document.getElementById('nav-link-1');
 const link2 = document.getElementById('nav-link-2');
 const link3 = document.getElementById('nav-link-3');
+const myBody = document.getElementById('our-body');
 
 // ==================================== OPENING MODAL FUNCTION ========================================
 function openModal() {
@@ -26,3 +27,22 @@ function openModal() {
   link1.addEventListener('click', closeModal);
   link2.addEventListener('click', closeModal);
   link3.addEventListener('click', closeModal);
+
+// ==================================== ADDING CLASS TO BODY ===========================================
+
+function addClassToBody() {
+  myBody.classList.add('modal-is-open');
+}
+
+openModalBtn.addEventListener('click', addClassToBody);
+
+// =================================  REMOVING CLASS FROM BODY ================================================
+
+function removeClassFromBody() {
+  myBody.classList.remove('modal-is-open');
+}
+
+closeModalBtn.addEventListener('click', removeClassFromBody);
+
+
+
