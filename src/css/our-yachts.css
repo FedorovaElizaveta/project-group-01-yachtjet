@@ -1,5 +1,6 @@
-.container.our-yachts {
-    overflow: hidden;
+.bennetti-yacht,
+.belle-anna-yacht {
+    display: none;
 }
 
 .our-yachts-title {
@@ -13,7 +14,7 @@
 }
 
 .yacht-cards-container {
-    margin: 0 auto 40px;
+    margin-bottom: 40px;
     display: flex;
     gap: 32px;
 }
@@ -53,7 +54,7 @@
 }
 
 .yacht-card-name {
-    width: 147px;
+    width: 121px;
     color: #1B414B;
     font-size: 14px;
     font-weight: 500;
@@ -76,7 +77,7 @@
 
 .yacht-characteristics {
     display: flex;
-    gap: 115px;
+    justify-content: space-between;
 }
 
 .yacht-characteristics-category-item {
@@ -120,7 +121,19 @@
 
 }
 
+@media screen and (max-width: 767px) {
+    .yacht-card {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+}
+
 @media screen and (min-width: 768px) {
+    .bennetti-yacht {
+        display: initial;
+    }
+
     .our-yachts-title {
         font-size: 48px;
         max-width: 645px;
@@ -138,21 +151,12 @@
     .yacht-card-name {
         font-size: 16px;
         line-height: 1.2;
-        width: 140px;
+        width: 147px;
     }
 
     .yacht-card-yacht-category {
         font-size: 13px;
         line-height: 1.18;
-    }
-
-    .yacht-characteristics.first-card {
-        gap: 117px;
-    }
-
-    .yacht-characteristics.second-card,
-    .yacht-characteristics.third-card {
-        gap: 104px;
     }
 
     .rent-yacht-link {
@@ -165,6 +169,10 @@
 }
 
 @media screen and (min-width: 1280px) {
+    .belle-anna-yacht {
+        display: initial;
+    }
+
     .our-yachts-title {
         max-width: 714px;
     }
@@ -183,15 +191,6 @@
 
     .yacht-card-title::after {
         width: 313px;
-    }
-
-    .yacht-characteristics.first-card {
-        gap: 158px;
-    }
-
-    .yacht-characteristics.second-card,
-    .yacht-characteristics.third-card {
-        gap: 145px;
     }
 
     .rent-yacht-link:hover,
@@ -215,15 +214,6 @@
 
     .yacht-card-title::after {
         width: 328px;
-    }
-
-    .yacht-characteristics.first-card {
-        gap: 173px;
-    }
-
-    .yacht-characteristics.second-card,
-    .yacht-characteristics.third-card {
-        gap: 160px;
     }
 
 }
