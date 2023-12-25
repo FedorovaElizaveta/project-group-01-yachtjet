@@ -1,6 +1,5 @@
 .header-wrapper {
     display: flex;
-    justify-content: space-between;
     align-items: center;
     position: fixed;
     top: 20px;
@@ -36,6 +35,8 @@
 /* Мобільна версія============= */
 
 
+
+
 /* ===========Бургер */
 
 
@@ -45,12 +46,38 @@
     .head-burger-button {
         background-color: transparent;
         border: none;
+        position: absolute;
+        top: 7px;
+        right: 20px;
     }
 
     .head-burger-button-icon {
         stroke: #1B414B;
     }
+
+    /* ===========Крестик */
+
+    .mobile-menu-modal-close-button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 28px;
+        height: 28px;
+        padding: 0;
+        line-height: 0;
+        background-color: transparent;
+        border: none;
+        position: absolute;
+        top: 7px;
+        right: 26px;
+    }
+
+    /* ===========Кнопки */
+
+
 }
+
+
 
 /* Планшетна версія=============== */
 
@@ -168,8 +195,6 @@
     .social-media-icon-link:hover,
     .social-media-icon-link:focus {
         fill: #062730;
-
-
     }
 
 }
