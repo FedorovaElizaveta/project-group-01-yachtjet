@@ -171,12 +171,12 @@
     margin-right: 296px;
   }
 
-  .nav-list-link:hover:not(.nav-list-link.current),
-  .nav-list-link:focus:not(.nav-list-link.current) {
+  .nav-list-link:hover:not(.current),
+  .nav-list-link:focus:not(.current) {
     background-color: rgba(27, 65, 75, 0.8);
   }
 
-  .nav-list-link.current:hover {
+  .current:hover {
     background-color: #062730;
   }
 
