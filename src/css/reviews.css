@@ -61,6 +61,52 @@
   letter-spacing: -0.02em;
 }
 
+/*------slider---------*/
+.reviews-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  overflow: hidden;
+}
+
+.reviews-list-item {
+  flex: 0 0 100%;
+}
+
+.slider-controls {
+  margin-top: 20px;
+}
+
+.slider-controls button {
+  min-width: 88px;
+  background-color: #1B414B;
+  color: #FBFBFB;
+  border: none;
+  border-radius: 15px;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-size: 14px;
+  line-height: 1.3;
+  letter-spacing: -0.02em;
+  transition: background-color 250ms linear, color 250ms linear;
+}
+
+.slider-controls button:hover {
+  background-color: #FBFBFB;
+  color: #1B414B;
+}
+
+.portfolio-list-avatar {
+  transition: transform 0.3s ease-in-out;
+}
+
+.portfolio-list-avatar:hover {
+  transform: scale(1.7);
+}
+
+/*----------end slider----*/
+
 /* ================ Mobile ================= */
 @media screen and (max-width: 767px) {
   .card-one {
@@ -91,10 +137,13 @@
     line-height: 1.28;
     margin-bottom: 75px;
   }
+   
 
   .reviews-list-item {
+    display: block;
     max-width: 336px;
   }
+   
 }
 
 /* ================ Desktop ================= */
@@ -112,59 +161,23 @@
   }
 
   .reviews-list-item {
+    display: block;
     padding: 32px 28px;
     max-width: 376px;
   }
+
+    
 }
 
-/*------slider---------*/
-.reviews-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  overflow: hidden;
-}
 
-.reviews-list-item {
-  flex: 0 0 100%;
-}
-
-.slider-controls {
-  margin-top: 20px;
-}
-
-.slider-controls button {
-  background-color: #1B414B;
-  color: #FBFBFB;
-  border: none;
-  border-radius: 15px;
-  padding: 10px 15px;
-  cursor: pointer;
-  font-size: 14px;
-    line-height: 1.3;
-    letter-spacing: -0.02em;
-    transition: background-color 250ms linear, color 250ms linear;
-}
-
-.slider-controls button:hover {
-  background-color: #2980b9;
-}
-
-.portfolio-list-avatar {
-  transition: transform 0.3s ease-in-out;
-}
-
-.portfolio-list-avatar:hover {
-  transform: scale(1.7);
-}
-
-/*----------end slider----*/
 
 /* ================ Desktop ================= */
 @media screen and (min-width: 1440px) {
   .reviews-list-item {
+    display: block;
     padding: 32px 36px;
     max-width: 392px;
   }
+   
+
 }
