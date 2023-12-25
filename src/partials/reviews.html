@@ -1,4 +1,4 @@
-<section class="reviews-section section">
+<section class="reviews-section section" id="reviews">
   <div class="reviews-container container">
     <h2 class="reviews-title">
       YachtJet take pride in providing the best possible service and experience
@@ -9,12 +9,14 @@
       take our word for it - read on to find out what they have to say about
       their journey with us.
     </p>
-    <ul class="reviews-list list">
+    
+    <ul class="reviews-list list slider-for-mobile">
       <li class="reviews-list-item">
         <div class="card">
           <img
             class="portfolio-list-avatar"
-            srcset="./img/review/john.png 1x, ./img/review/john@2x.png 2x"
+            srcset="./img/review/john@2x.png 2x"
+
             src="./img/review/john.png"
             alt="John Wax"
             width="56"
@@ -33,7 +35,6 @@
           <img
             class="portfolio-list-avatar"
             srcset="
-              ./img/review/victoria.png    1x,
               ./img/review/victoria@2x.png 2x
             "
             src="./img/review/victoria.png"
@@ -53,7 +54,8 @@
         <div class="card">
           <img
             class="portfolio-list-avatar"
-            srcset="./img/review/ihor.png 1x, ./img/review/ihor@2x.png 2x"
+            srcset="./img/review/ihor@2x.png 2x"
+            
             src="./img/review/ihor.png"
             alt="Ihor Trachuk"
             width="56"
@@ -68,5 +70,11 @@
         </div>
       </li>
     </ul>
+    <div class="slider-controls">
+      <button onclick="plusSlides(-1)">Previous</button>
+      <button onclick="plusSlides(1)">Next</button>
+    </div>
+     
   </div>
+  <script src="./js/reviews.js"></script>
 </section>
