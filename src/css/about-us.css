@@ -1,29 +1,30 @@
-* {
-    box-sizing: border-box;
-}
+
 
 .about {
     padding-top: 0;
 }
 
-.about-us-container {
-    background: #0E1823;
-}
 
 /* ================ SECTION ABOU US ======================== */
 
 /* ===================== MOBILE =========================== */
 
+.about-us-card-wrapper {
+    max-width: 335px;
+    border-top-right-radius: 24px;
+    border-top-left-radius: 24px;
+    border-bottom-right-radius: 7%;
+    border-bottom-left-radius: 7%;
+    background: #FBFBFB;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
 .poster {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    text-align: center;
-    width: 100%;
-    padding: 40px 20px 335px 20px;
+    padding: 40px 20px;
     gap: 40px;
-    border-radius: 24px;
-    background: #FBFBFB;
 }
 
 .poster-title {
@@ -36,38 +37,22 @@
 
 .poster-paragraphs {
     display: flex;
-    width: 100%; 
-    /* 295px; */
     flex-direction: column;
-    align-items: flex-start;
     gap: 20px;
 }
 
 .poster-description {
     color: #1B414B;
     font-size: 18px;
-    font-weight: 400;
     line-height: 1;
     letter-spacing: -0.02em;
 }
 
 .poster-invitation {
-    color: #040306;
+    color: rgba(4, 3, 6, 0.4);
     font-size: 12px;
-    font-weight: 400;
     line-height: 1.17;
     letter-spacing: -0.02em;
-    opacity: 0.4;
-}
-
-.thumb-about-us {
-    position: relative;
-    top: -295px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: lightgray -181.984px -4.244px / 182.464% 109.429% no-repeat;
 }
 
 .picture-about-us {
@@ -85,61 +70,31 @@
 
 @media screen and (min-width: 768px) {
 
-    .about-us-container {
-        text-align: start;
+    .about-us-card-wrapper {
+        max-width: 704px;
     }
 
     .poster {
-        display: inline-flex;
-        flex-direction: column;
-        align-items: flex-start;
-        text-align: start;
-        padding: 50px 136px 244px 32px;
+        padding: 50px 32px;
         gap: 50px;
     }
 
     .poster-title {
         width: 536px;
-        color: #1B414B;
         font-size: 48px;
-        font-weight: 500;
-        line-height: 1;
-        letter-spacing: -0.02em;
     }
 
     .poster-paragraphs {
-        display: flex;
         width: 389px;
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 20px;
     }
 
     .poster-description {
-        color: #1B414B;
         font-size: 23px;
-        font-weight: 400;
-        line-height: 1;
-        letter-spacing: -0.02em;
     }
 
     .poster-invitation {
-        color: #040306;
         font-size: 13px;
-        font-weight: 400;
         line-height: 1.15;
-        letter-spacing: -0.02em;
-        opacity: 0.4;
-    }
-
-    .thumb-about-us {
-        position: relative;
-        top: -194px;
-        width: 704px;
-        height: 470px;
-        border-radius: 24px;
-        background-color: lightgray -56.901px -9.603px / 112.912% 119.598% no-repeat;
-        background-size: 704px;
     }
 
     .img-about-us {
@@ -153,141 +108,40 @@
 
 @media screen and (min-width: 1280px) {
 
-    .about-us-container {
-        text-align: start;
+    .about-us-card-wrapper {
+        max-width: 1180px;
     }
 
     .poster {
-        display: flex;
         flex-direction: row;
-        width: 1180px;
-        height: 675px;
-        padding: 50px 50px 415px 50px;
-        justify-content: center;
-        align-items: flex-start;
+        padding: 50px 50px;
         gap: 189px;
-        flex-shrink: 0;
     }
 
     .poster-title {
         width: 537px;
-        font-size: 48px;
-        font-weight: 500;
-        line-height: 1;
-        letter-spacing: -0.02em;
     }
 
     .poster-paragraphs {
-        display: flex;
-        flex-direction: column;
         width: 354px;
-        align-items: flex-start;
-        gap: 20px;
     }
-
-    .poster-description {
-        color: #1B414B;
-        font-size: 23px;
-        font-weight: 400;
-        line-height: 1;
-        letter-spacing: -0.02em;
-    }
-
-    .poster-invitation {
-        color: #040306;
-        font-size: 13px;
-        font-weight: 400;
-        line-height: 1.15;
-        letter-spacing: -0.02em;
-        opacity: 0.4;
-    }
-
-    .thumb-about-us {
-        position: relative;
-        top: -315px;
-        width: 1180px;
-        height: 470px;
-        border-radius: 24px;
-        background-color: lightgray 50% / cover no-repeat;
-        background-size: 1180px;
-    }
-
-    .img-about-us {
-        border-radius: 24px;
-    }
-
-
-
 
 }
 
-/* =================== DESKTOP WIDE ======================== */
+/* ================== DESKTOP WIDE ====================== */
 
 @media screen and (min-width: 1440px) {
-    .about-us-container {
-        text-align: start;
+
+    .about-us-card-wrapper {
+        max-width: 1340px;
     }
 
     .poster {
-        display: flex;
-        flex-direction: row;
-        width: 1340px;
-        height: 675px;
-        padding: 50px 50px 438px 50px;
-        justify-content: center;
-        align-items: flex-start;
         gap: 299px;
-        flex-shrink: 0;
-    }
-
-    .poster-title {
-        width: 537px;
-        flex-shrink: 0;
-        color: #1B414B;
-        font-size: 48px;
-        font-weight: 500;
-        line-height: 1;
-        letter-spacing: -0.02em;
     }
 
     .poster-paragraphs {
-        display: flex;
-        flex-direction: column;
         width: 404px;
-        align-items: flex-start;
-        gap: 20px;
-    }
-
-    .poster-description {
-        color: #1B414B;
-        font-size: 23px;
-        font-weight: 400;
-        line-height: 1;
-        letter-spacing: -0.02em;
-    }
-
-    .poster-invitation {
-        color: #040306;
-        font-size: 13px;
-        font-weight: 400;
-        line-height: 1.15;
-        letter-spacing: -0.02px;
-        opacity: 0.4;
-    }
-
-    .thumb-about-us {
-        position: relative;
-        top: -338px;
-        width: 1340px;
-        height: 470px;
-        flex-shrink: 0;
-        border-radius: 24px;
-        background-size: 1340px;
-        background-color: lightgray 50% / cover no-repeat;
-    }
-
-    .img-about-us {
-        border-radius: 24px;
     }
 
 }
