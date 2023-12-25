@@ -57,13 +57,7 @@
   transition: background-color 250ms linear, color 250ms linear;
 }
 
-.nav-link-footer.current {
-  background-color: #FBFBFB;
-  color: #1b414b;
-}
-
-
-.nav-link-footer.current:active {
+.nav-link-footer:active {
   background-color: #FBFBFB;
   color: #1b414b;
 }
