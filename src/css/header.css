@@ -48,8 +48,9 @@
         background-color: transparent;
         border: none;
         position: absolute;
-        top: 7px;
+        padding: 0;
         right: 20px;
+        line-height: 0;
     }
 
     .head-burger-button-icon {
@@ -69,8 +70,7 @@
         background-color: transparent;
         border: none;
         position: absolute;
-        top: 7px;
-        right: 26px;
+        right: 20px;
     }
 
     /* ===========Кнопки */
