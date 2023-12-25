@@ -53,26 +53,28 @@
   margin-bottom: 38px;
 }
 
-.hero-button {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 14px 32px;
+.hero-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 141px;
+  height: 46px;
   background: #1b414b;
   color: #fbfbfb;
   border: none;
-  min-width: 141px;
   border-radius: 15px;
   font-size: 14px;
   font-weight: 500;
   line-height: 1.28;
   letter-spacing: -0.02em;
+  margin-left: auto;
+  margin-right: auto;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.hero-button:hover,
-.hero-button:focus {
+.hero-link:hover,
+.hero-link:focus {
   background-color: #fbfbfb;
   color: #1b414b;
 }
@@ -104,7 +106,8 @@
     margin-bottom: 48px;
   }
 
-  .hero-button {
+  .hero-link {
+    min-width: 179px;
     padding: 16px 40px;
     font-size: 18px;
     line-height: 1.1;
