@@ -40,6 +40,12 @@
 
 /* ===========Бургер */
 
+.head-burger-button,
+.mobile-menu-modal-close-button {
+    display: none;
+}
+
+
 
 @media screen and (max-width: 767px) {
 
@@ -86,7 +92,6 @@
 
     .header-wrapper {
         max-width: 704px;
-
         height: 48px;
         top: 32px;
         left: 32px;
@@ -166,12 +171,9 @@
 
     /* Бургер====== */
 
-    .head-burger-button,
-    .mobile-menu-modal-close-button {
+    .head-burger-button {
         display: none;
     }
-
-
 }
 
 @media screen and (min-width: 1280px) {
