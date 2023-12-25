@@ -24,10 +24,20 @@ function openModal() {
 
   // ATTACHING CLICK EVENTS TO LINKS, SO THAT THE MODAL CLOSES WHEN WE WANT TO NAVIAGTE THROUGHT THE PAGE
   
-  link1.addEventListener('click', closeModal);
-  link2.addEventListener('click', closeModal);
-  link3.addEventListener('click', closeModal);
+  link1.addEventListener('click', function () {
+    closeModal();
+    updateButtonVisibility();
+});
 
+link2.addEventListener('click', function () {
+    closeModal();
+    updateButtonVisibility();
+});
+
+link3.addEventListener('click', function () {
+    closeModal();
+    updateButtonVisibility();
+});
 // ==================================== ADDING CLASS TO BODY ===========================================
 
 function addClassToBody() {
@@ -45,4 +55,76 @@ function removeClassFromBody() {
 closeModalBtn.addEventListener('click', removeClassFromBody);
 
 
+// =================================  NAV BUTTON STYLES ================================================
 
+
+document.addEventListener('DOMContentLoaded', function () {
+
+ // =================================  GET NAV ELEMENTS ================================================
+  
+    var modalNavLinks = document.querySelectorAll('.mobile-menu-nav-link');
+
+  // =================================  ADDING NAV EVENT ================================================
+  
+    modalNavLinks.forEach(function (link) {
+      link.addEventListener('click', function (event) {
+
+        event.preventDefault();
+
+// =================================  REMOVING CLASS FROM MODAL ================================================
+
+        modalNavLinks.forEach(function (modalNavLinks) {
+          modalNavLinks.classList.remove('current');
+        });
+
+// ==================================== ADDING CLASS TO MODAL ===========================================
+
+        link.classList.add('current');
+
+// ==================================== SMOUTH SCROLL ===========================================
+
+        var targetId = link.getAttribute('href').substring(1);
+        var targetElement = document.getElementById(targetId);
+        if (targetElement) {
+          targetElement.scrollIntoView({
+            behavior: 'smooth',
+          });
+        }
+      });
+    });
+});
+
+  
+  // =================================  TOGGLE BUTTONS ================================================
+
+  
+function toggleButtons() {
+    var openButton = document.getElementById('openModalBtn');
+    var closeButton = document.getElementById('closeModalBtn');
+
+    openButton.classList.toggle('hidden-button');
+    closeButton.classList.toggle('hidden-button');
+}
+
+document.getElementById('openModalBtn').addEventListener('click', function () {
+    toggleButtons();
+});
+
+document.getElementById('closeModalBtn').addEventListener('click', function () {
+    toggleButtons();
+});
+
+link1.addEventListener('click', function () {
+    closeModal();
+    toggleButtons();
+});
+
+link2.addEventListener('click', function () {
+    closeModal();
+    toggleButtons();
+});
+
+link3.addEventListener('click', function () {
+    closeModal();
+    toggleButtons();
+});

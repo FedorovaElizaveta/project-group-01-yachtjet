@@ -3,15 +3,15 @@
     <div class="header-wrapper">
       <nav class="head-nav-box">
         <a href="../index.html" class="nav-logo">yachtjet</a>
-        <ul class="nav-list list">
+        <ul id="nvlst" class="nav-list list">
           <li class="nav-list-item">
-            <a class="nav-list-link nav-list-link-current" href="">About</a>
+            <a class="nav-list-link current" href="#about-us">About</a>
           </li>
           <li class="nav-list-item">
-            <a class="nav-list-link" href="">Yachts</a>
+            <a class="nav-list-link" href="#our-yachts">Yachts</a>
           </li>
           <li class="nav-list-item">
-            <a class="nav-list-link" href="">Reviews</a>
+            <a class="nav-list-link" href="#reviews">Reviews</a>
           </li>
         </ul>
       </nav>
@@ -73,6 +73,19 @@
           aria-label="Open navigation bar"
         >
           <use href="./img/icons.svg#icon-burger_menu"></use>
+        </svg>
+      </button>
+      <button
+        class="mobile-menu-modal-close-button hidden-button"
+        id="closeModalBtn"
+      >
+        <svg
+          class="mobile-menu-modal-close-button-icon"
+          width="16"
+          height="16"
+          aria-label="close button"
+        >
+          <use href="./img/icons.svg#icon-close_btn"></use>
         </svg>
       </button>
     </div>
