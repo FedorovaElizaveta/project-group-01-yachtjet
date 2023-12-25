@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 .main-footer {
   padding-bottom: 0;
 }
