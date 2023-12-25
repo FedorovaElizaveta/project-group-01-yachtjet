@@ -1,6 +1,7 @@
 .header-wrapper {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     position: fixed;
     top: 20px;
     left: 20px;
@@ -85,6 +86,7 @@
 
     .header-wrapper {
         max-width: 704px;
+
         height: 48px;
         top: 32px;
         left: 32px;
@@ -164,7 +166,8 @@
 
     /* Бургер====== */
 
-    .head-burger-button {
+    .head-burger-button,
+    .mobile-menu-modal-close-button {
         display: none;
     }
 }
