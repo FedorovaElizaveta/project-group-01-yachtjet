@@ -1,0 +1,108 @@
+.about {
+    padding-top: 0;
+  }
+  /* ================ SECTION ABOUT US ======================== */
+  /* ===================== MOBILE =========================== */
+  .about-us-card-wrapper {
+    max-width: 335px;
+    border-top-right-radius: 24px;
+    border-top-left-radius: 24px;
+    border-bottom-right-radius: 7%;
+    border-bottom-left-radius: 7%;
+    background: #FBFBFB;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .poster {
+    display: flex;
+    flex-direction: column;
+    padding: 40px 20px;
+    gap: 40px;
+  }
+  .poster-title {
+    color: #1B414B;
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 1;
+    letter-spacing: -0.02em;
+  }
+  .poster-paragraphs {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .poster-description {
+    color: #1B414B;
+    font-size: 18px;
+    line-height: 1;
+    letter-spacing: -0.02em;
+  }
+  .poster-invitation {
+    color: rgba(4, 3, 6, 0.4);
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: -0.02em;
+  }
+  .picture-about-us {
+    width: 100%;
+  }
+  .img-about-us {
+    width: 100%;
+    border-radius: 7%;
+  }
+  /* ===================== TABLET ======================== */
+  @media screen and (min-width: 768px) {
+    .about-us-card-wrapper {
+      max-width: 704px;
+    }
+    .poster {
+      padding: 50px 32px;
+      gap: 50px;
+    }
+    .poster-title {
+      width: 536px;
+      font-size: 48px;
+    }
+    .poster-paragraphs {
+      width: 389px;
+    }
+    .poster-description {
+      font-size: 23px;
+    }
+    .poster-invitation {
+      font-size: 13px;
+      line-height: 1.15;
+    }
+    .img-about-us {
+      border-radius: 24px;
+    }
+  }
+  /* ================= DESKTOP ============================ */
+  @media screen and (min-width: 1280px) {
+    .about-us-card-wrapper {
+      max-width: 1180px;
+    }
+    .poster {
+      flex-direction: row;
+      padding: 50px 50px;
+      gap: 189px;
+    }
+    .poster-title {
+      width: 537px;
+    }
+    .poster-paragraphs {
+      width: 354px;
+    }
+  }
+  /* =================== DESKTOP WIDE ======================== */
+  @media screen and (min-width: 1440px) {
+    .about-us-card-wrapper {
+      max-width: 1340px;
+    }
+    .poster {
+      gap: 299px;
+    }
+    .poster-paragraphs {
+      width: 404px;
+    }
+  }
