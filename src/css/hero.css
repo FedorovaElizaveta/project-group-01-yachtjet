@@ -24,7 +24,8 @@
         rgba(17, 19, 31, 0.31),
         rgba(17, 19, 31, 0)
       ),
-      url(../img/mobille/hero/hero_image@2x.jpg);
+      url(../img/mobille/hero/hero_image@2x.jpg),
+      lightgray -363.632px -322.699px / 294.966% 170.401% no-repeat;
   }
 }
 
