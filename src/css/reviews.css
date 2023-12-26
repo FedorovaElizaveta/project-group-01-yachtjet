@@ -6,7 +6,8 @@
   text-align: center;
   font-size: 28px;
   font-weight: 500;
-  letter-spacing: 0.02em;
+  line-height: 1;
+  letter-spacing: -0.02em;
   margin-bottom: 25px;
 }
 
@@ -14,19 +15,12 @@
   margin-left: auto;
   margin-right: auto;
   max-width: 335px;
-  color: #fbfbfb;
+  color: rgba(251, 251, 251, 0.4);
   text-align: center;
   font-size: 12px;
-  line-height: 1.16;
+  line-height: 1.17;
   letter-spacing: -0.02em;
-  opacity: 0.4;
   margin-bottom: 40px;
-}
-
-.reviews-list {
-  display: flex;
-  justify-content: center;
-  gap: 32px;
 }
 
 .reviews-list-item {
@@ -40,10 +34,10 @@
 
 .portfolio-list-avatar {
   margin: 0 auto;
+  margin-bottom: 24px;
 }
 
 .reviews-list-author {
-  margin-top: 24px;
   margin-bottom: 8px;
   color: #040306;
   text-align: center;
@@ -61,78 +55,28 @@
   letter-spacing: -0.02em;
 }
 
-/*------slider---------*/
-.reviews-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  overflow: hidden;
-}
-
-.reviews-list-item {
-  flex: 0 0 100%;
-}
-
-.slider-controls {
-  display: flex;
-  justify-content: center;
-  margin-top: 20px;
-  gap: 4px;
-}
-
-.slider-controls button {
-  min-width: 88px;
-  background-color: #1B414B;
-  color: #FBFBFB;
-  border: none;
-  border-radius: 15px;
-  padding: 10px 15px;
-  font-size: 14px;
-  line-height: 1.3;
-  letter-spacing: -0.02em;
-  transition: background-color 250ms linear, color 250ms linear;
-}
-
-.slider-controls button:hover,
-.slider-controls button:focus,
-.slider-controls button:active {
-  background-color: #FBFBFB;
-  color: #1B414B;
-}
-
-.portfolio-list-avatar {
-  transition: transform 0.3s ease-in-out;
-}
-
-.portfolio-list-avatar:hover {
-  transform: scale(1.7);
-}
-
-/*----------end slider----*/
-
 /* ================ Mobile ================= */
 @media screen and (max-width: 767px) {
   .card-one {
-    display: none;
+    margin-right: auto;
+    margin-left: auto;
   }
   .card-two {
     display: none;
   }
+}
 
+@media screen and (max-width: 1278px) {
+  .card-three {
+    display: none;
+  }
 }
 
 /* ================ Tablete ================= */
 @media screen and (min-width: 768px) {
-  .card-two {
-    display: none;
-  }
-
   .reviews-title {
     max-width: 704px;
     font-size: 48px;
-    line-height: 1;
-    letter-spacing: -0.02em;
   }
 
   .reviews-desc {
@@ -141,13 +85,16 @@
     line-height: 1.28;
     margin-bottom: 75px;
   }
-   
+
+  .reviews-list {
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+  }
 
   .reviews-list-item {
-    display: block;
     max-width: 336px;
   }
-   
 }
 
 /* ================ Desktop ================= */
@@ -160,28 +107,16 @@
     max-width: 854px;
   }
 
-  .card-two {
-    display: initial;
-  }
-
   .reviews-list-item {
-    display: block;
     padding: 32px 28px;
     max-width: 376px;
   }
-
-    
 }
-
-
 
 /* ================ Desktop ================= */
 @media screen and (min-width: 1440px) {
   .reviews-list-item {
-    display: block;
     padding: 32px 36px;
     max-width: 392px;
   }
-   
-
 }
